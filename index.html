@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Christian Elijah Darvin</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Christian Darvin" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/coding.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <!-- <meta
+      property="og:url"
+      content="https://christiandarvs.github.io/trymehehe/"
+    /> -->
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Christian Darvin" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Christian Darvin" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <!-- <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/christiandarvs/trymehehe/main/assets/start.png"
+    /> -->
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script
+      src="https://kit.fontawesome.com/9a6b50ca7c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          <span class="text-color-main name">Hello! I'm Christian,</span>
+          <br />
+          a Junior Computer Science Student
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Learn More</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/pycon-darvs.jpg"
+              alt="Profile Image"
+              width="0"
+              draggable="false"
+              height="200"
+            />
+
+            <!-- select between these two options -->
+
+            <!-- <img class="img-fluid" src="./assets/dptrans.png" alt="Profile Image" width="200" height="200" /> -->
+          </div>
+          <div class="about-wrapper__info">
+            <ul>
+              <li>
+                <p class="about-wrapper__info-text">
+                  3rd year Computer Science Major at De La Salle University -
+                  Dasmarinas
+                </p>
+              </li>
+              <li>
+                <p class="about-wrapper__info-text">
+                  Machine Learning Specialization
+                </p>
+              </li>
+              <li>
+                <p class="about-wrapper__info-text">
+                  TikTok Tech Content Creator
+                </p>
+              </li>
+            </ul>
+            <span class="about-wrapper__cta">
+              <a
+                href="./assets/resume.pdf"
+                class="cta-btn cta-btn--resume"
+                target="_blank"
+                >View Resume</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <h2 class="section-title dark-blue-text">Projects</h2>
+      <div id="con">
+        <div id="carouselProjects" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <!-- <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="2" aria-label="Slide 4"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.christiandarvin.the_forty_eight_laws_of_power_summary"
+                target="_blank"
+              >
+                <img
+                  src="./assets/./projects/SmartCents-Banner.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                  draggable="false"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.christiandarvin.the_forty_eight_laws_of_power_summary"
+                target="_blank"
+              >
+                <img
+                  src="./assets/./projects/48-Laws-of-Power-Banner.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                  draggable="false"
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselProjects"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselProjects"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- <hr /> -->
+
+      <!-- Second carousel -->
+      <h2 class="section-title dark-blue-text" style="margin-top: 50px">
+        Machine Learning Certificates
+      </h2>
+      <div id="con">
+        <div id="carouselOtherProjects" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <!-- <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button> -->
+          </div>
+          <div class="carousel-inner">
+            <!-- <div class="carousel-item active">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/F29XN2A3HTWV"
+                target="_blank"
+              >
+                <img
+                  draggable="false"
+                  src="./assets/certs/Math-Specialization-Course.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h2>August 2024</h2>
+                </div>
+              </a>
+            </div> -->
+            <!-- 2nd cert -->
+            <div class="carousel-item active">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/KPGPY6QZ2HLR"
+                target="_blank"
+              >
+                <img
+                  src="./assets/certs/Machine-Learning-Specialization-Course.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h2>July 2024</h2>
+                </div>
+              </a>
+            </div>
+            <!-- 3rd cert -->
+            <div class="carousel-item">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/F29XN2A3HTWV"
+                target="_blank"
+              >
+                <img
+                  src="./assets/certs/Math-Specialization-Course.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h2>April 2024</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselOtherProjects"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselOtherProjects"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- <hr /> -->
+      <!-- <h2 class="section-title dark-blue-text">Blog Posts</h2>
+      <div id="con">
+        <div id="carouselOtherProjects" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselOtherProjects"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/F29XN2A3HTWV"
+                target="_blank"
+              >
+                <img
+                  src="./assets/banners/dev.to post banner.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+              </a>
+            </div> -->
+      <!-- 2nd cert -->
+      <!-- <div class="carousel-item">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/F29XN2A3HTWV"
+                target="_blank"
+              >
+                <img
+                  src="./assets/certs/Math-Specialization-Course.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h2>July 2024</h2>
+                </div>
+              </a>
+            </div> -->
+      <!-- 3rd cert -->
+      <!-- <div class="carousel-item">
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/F29XN2A3HTWV"
+                target="_blank"
+              >
+                <img
+                  src="./assets/certs/Math-Specialization-Course.png"
+                  class="d-block w-100 bg-image hover-zoom"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h2>April 2024</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselOtherProjects"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselOtherProjects"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div> -->
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <!-- leave it blank for a while -->
+    <!-- <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">[Put your call to action here]</p>
+        <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+      </div>
+    </div>
+  </section> -->
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://github.com/christiandarvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/christiandarvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://dev.to/christiandarvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="dev-to"
+          >
+            <i class="fa-brands fa-dev"></i>
+          </a>
+          <a
+            href="https:/tiktok.com/@christiandarvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="tiktok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <!-- <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="github">
+          <i class="fa-brands fa-github"></i>
+        </a> -->
+        </div>
+        <h1 id="year" style="color: white"></h1>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>

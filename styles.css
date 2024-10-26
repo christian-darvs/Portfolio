@@ -1,0 +1,49 @@
+#con {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: auto;
+  max-width: 100%;
+  height: auto; /* Allow the height to adjust based on aspect ratio */
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img.bg-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img.hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile phones */
+  #con {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .carousel-item img {
+    max-height: 70vh; /* Adjust the percentage or use 'auto' */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for desktop views */
+  .carousel-item img {
+    max-width: 70%; /* Adjust the image size for desktop */
+    height: 400px; /* Set a fixed height for images on desktop */
+    margin: 0 auto;
+  }
+}
+
+.container_blog {
+  background-color: #e5e5e5;
+  margin: 10px;
+}
